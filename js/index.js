@@ -156,7 +156,6 @@ function render(data) {
   $(".time").text(data.time);
   $(".cover img").attr("src", data.cover);
   $("audio").attr("src", data.audio_url);
-  $("audio").get(0).load();  // 重新加载音频
   $(".mask_bg").css({
     background: `url("${data.cover}") no-repeat center center`,
   });
